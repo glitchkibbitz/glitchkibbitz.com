@@ -30,6 +30,7 @@
     white-space: normal;
     vertical-align: -4px;
     line-height: 3.125rem !important;
+    text-transform: uppercase;
 }
 
 .navbar-dropdown .navbar-caption,
