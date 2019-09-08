@@ -380,6 +380,6 @@
 .anchor {
     display: block;
     position: relative;
-    top: -100px; /* adjusted to suit my purposes */
+    top: -1px; /* adjusted to suit my purposes */
     visibility: hidden;
 }
