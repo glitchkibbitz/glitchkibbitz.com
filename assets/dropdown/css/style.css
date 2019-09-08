@@ -376,3 +376,10 @@
 .btn-text {
     padding-left: 10px;
 }
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px; /* adjusted to suit my purposes */
+    visibility: hidden;
+}
