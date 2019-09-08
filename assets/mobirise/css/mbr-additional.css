@@ -22814,6 +22814,7 @@ body {
 .video-container {
     background: #232323;
     background: linear-gradient(0deg, #232323, #232323);
+    margin-top: 25px;
 }
 .video-container .container {
     padding-right: 0 !important;
