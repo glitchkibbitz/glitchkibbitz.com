@@ -373,4 +373,6 @@
     transition: none !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.btn-text {
+    padding-left: 10px;
+}

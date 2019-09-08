@@ -2315,10 +2315,6 @@ body {
     }
 }
 
-.cid-qzDdkeZXW6 {
-    background-image: url("../../assets/images/photo-1.jpg");
-}
-
 .cid-qzDdkeZXW6 .mbr-section-subtitle {
     font-style: italic;
     letter-spacing: 1rem;
@@ -22213,14 +22209,14 @@ body {
     }
 }
 
-.cid-qvba3cZz97 {
+.intro {
     background-image: url("../../images/photo-1.jpg");
 }
 
-.cid-qvba3BCvzn {
+.listen {
     padding-top: 90px;
     padding-bottom: 90px;
-    background-image: url("../../../assets/images/carlos-dominguez-325313-2000x1500.jpg");
+    background-image: url("../../images/shtetl-scene.jpg");
 }
 
 .cid-qvba3RB6Ut {
@@ -22810,19 +22806,23 @@ body {
     color: #ffffff;
 }
 
-.cid-qvRdnmPrQ8 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.video-container {
     background: #232323;
     background: linear-gradient(0deg, #232323, #232323);
 }
+.video-container .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    height: 432px;
+    width: 768px;
+}
 
-.cid-qvRdnmPrQ8 .video-block {
+.video-container .video-block {
     margin: auto;
 }
 
 @media (max-width: 768px) {
-    .cid-qvRdnmPrQ8 .video-block {
+    .video-container .video-block {
         width: 100% !important;
     }
 }
