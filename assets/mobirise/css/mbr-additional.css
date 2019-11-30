@@ -22805,7 +22805,7 @@ body {
 .video-container .container {
     padding-right: 0 !important;
     padding-left: 0 !important;
-    height: 432px;
+    /* height: 432px; */
     width: 768px;
 }
 
