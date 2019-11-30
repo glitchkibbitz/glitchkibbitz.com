@@ -17,7 +17,7 @@ section,
 .hero {
   background: #9e9b9ba3;
   border-radius: 5px;
-  padding: 16px 16px 0 16px;
+  padding: 16px;
 }
 
 .hero-title {
