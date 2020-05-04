@@ -360,6 +360,15 @@ nav .mbr-section-btn {
     -webkit-appearance: none;
 }
 
+.btn-spotify {
+  background-color: #1DB954 !important;
+  border-color: #1DB954 !important;
+}
+
+a.btn.btn-md.btn-primary.display-4 {
+    width: 25%;
+}
+
 /*! Full-screen */
 
 .mbr-fullscreen .mbr-overlay {
