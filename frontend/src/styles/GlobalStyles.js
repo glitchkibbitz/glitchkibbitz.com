@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-weight: 700;
     }
-    .content {
+    main {
         width: 75%;
         //background: #9e9b9ba3;
         background: rgba(0, 0, 0, 0.85);

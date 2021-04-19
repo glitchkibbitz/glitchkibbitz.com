@@ -13,9 +13,9 @@ export default function Layout({ children }) {
         <Typography />
         <StyledFullBackground imgName="band-pic.jpg">
         <Nav />
-        <section className="content">
+        <main>
             {children}
-        </section>
+        </main>
         <Footer />
         </StyledFullBackground>
     </>
