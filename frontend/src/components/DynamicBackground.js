@@ -18,7 +18,7 @@ const FullBackground = ({ imgName, className, children }) => {
         allImageSharp {
           edges {
             node {
-              fluid(maxWidth: 4160) {
+              fluid(maxWidth: 4160, grayscale: true) {
                 ...GatsbyImageSharpFluid
                 originalName
               }
@@ -34,7 +34,7 @@ const FullBackground = ({ imgName, className, children }) => {
     ).node.fluid
 
     return (
-        <StyledFullScreenWrapper>
+        <StyledFullScreenWrapper id="site">
             <BackgroundImage
                 Tag="section"
                 className={className}
