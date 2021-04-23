@@ -1,23 +1,26 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { FaBandcamp, FaSpotify } from 'react-icons/fa';
+import { FaBandcamp, FaSpotify } from 'react-icons/fa'
 
+const MusicStyles = styled.div`
+  justify-content: center;
+`
 const BandcampButton = styled.button`
   background-color: rgb(20,157,203);
   margin-top: 1em;
-`;
+`
 
 const SpotifyButton = styled.button`
   background-color: rgb(28,185,84);
-`;
+`
 
 export default function MusicPage() {
   return (
     <>
     <h1>Listen</h1>
     <h2>Let your ears nosh on some auditory treats.</h2>
-    <BandcampButton><FaBandcamp /> Bandcamp</BandcampButton>
-    <SpotifyButton><FaSpotify /> Spotify</SpotifyButton>
+    <BandcampButton><FaBandcamp className="icon" /> Bandcamp</BandcampButton>
+    <SpotifyButton><FaSpotify className="icon" /> Spotify</SpotifyButton>
     <div class="bandcamp-album">
         <iframe style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
     </div>

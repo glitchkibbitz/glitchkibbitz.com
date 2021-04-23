@@ -50,7 +50,6 @@ const GlobalStyles = createGlobalStyle`
         margin-top: 2em;
         display: flex;
         flex-flow: column;
-        justify-content: center;
     }
     footer {
         position: sticky;
@@ -71,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0 7%;
     }
 
-    button {
+    button, .button {
         display: inline-block;
         border: none;
         padding: 1rem 2rem;
@@ -89,7 +88,11 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 5px;
         margin: .5em;
         width: 200px;
-        align-self: center;
+        align-self: center;        
+    }
+
+    .icon {
+        transform: translateY(13%);
     }
 
     @media (max-width: 830px) {
