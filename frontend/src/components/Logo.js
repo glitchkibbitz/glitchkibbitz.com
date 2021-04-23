@@ -13,14 +13,14 @@ const LogoStyles = styled.div`
   font-size: clamp(1px, 0.65vw, 8px);
   width: 38em;
   margin: 0;
-  background: black;
+  //background: black;
   background-size: 150em;
   /* border: var(--borderSize) solid white; */
   display: flex;
   .inner {
     /* margin: var(--borderSize); */
     flex: 1;
-    background: black;
+    //background: black;
     display: grid;
     grid-template-rows: 20% 1fr 1fr;
     align-content: center;
@@ -33,7 +33,7 @@ const LogoStyles = styled.div`
     margin: 0;
     grid-row: 2 / span 2;
     grid-gap: 2em;
-    transform: translateY(-0.7em);
+    //transform: translateY(-0.7em);
   }
   .kibbitz {
     font-size: 3.2em;
@@ -106,16 +106,6 @@ export default function Logo() {
                         <span className="kibbitz">Kibbitz</span>
                     </span>
                 </h1>
-                    {/* <span className="slicks">
-                        <span className="letter S">S</span>
-                        <span className="letter l">l</span>
-                        <span className="letter i">i</span>
-                        <span className="letter c">c</span>
-                        <span className="letter k">k</span>
-                        <span className="letter apos">'</span>
-                        <span className="letter s">s</span>
-                    </span>
-                    <span className="slices">slices</span> */}
             </div>
         </LogoStyles>
     );

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const StyledWrapper = styled.div`
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   display: flex;
   place-content: start;
@@ -10,10 +10,11 @@ export const StyledWrapper = styled.div`
 
 export const StyledFullScreenWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  overflow: hidden;
-  background: rgba(151,206,225, .5);
+  overflow: scroll;
+  background: rgb(74 32 32 / 35%);
+  padding: 0;
 `
 
 export const StyledContentCenterWrapper = styled.div`

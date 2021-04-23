@@ -39,8 +39,6 @@ const FullBackground = ({ imgName, className, children }) => {
                 Tag="section"
                 className={className}
                 fluid={imageData}
-                backgroundColor={`#040e18`}                
-                id="fullscreenbg"
                 role="img"
                 aria-label="Fullscreen Background"
                 preserveStackingContext={true}
@@ -53,11 +51,16 @@ const FullBackground = ({ imgName, className, children }) => {
 
 const StyledFullBackground = styled(FullBackground)`
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: static !important;
+  padding: 0 !important;
 `
 
 export default StyledFullBackground

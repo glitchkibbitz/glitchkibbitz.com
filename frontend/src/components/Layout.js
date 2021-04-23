@@ -11,8 +11,8 @@ export default function Layout({ children }) {
     <>
         <GlobalStyles />
         <Typography />
+        <header><Nav /></header>
         <StyledFullBackground imgName="band-pic.jpg">
-        <Nav />
         <main>
             {children}
         </main>

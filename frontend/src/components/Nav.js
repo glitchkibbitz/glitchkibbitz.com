@@ -1,10 +1,59 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    gap: 2rem;
+  }
+  li {
+    order: 1;
+  }
+  a {
+    color: var(--white);
+    font-size: 3rem;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: var(--light-blue);
+    }
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
+  }
+  .logo-item {
+    //transform: translateY(25%);
+    background: transparent;
+    border: none;
+  }
+  @media (max-width: 600px) {
+    --columns: 4;
+    padding-bottom: 1rem;
+    ul {
+      grid-template-rows: auto auto;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      justify-items: center;
+      gap: 1rem;
+    }
+    .logo-item {
+      order: 0;
+      transform: none;
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 500px) {
+    --columns: 2;
+  }
   /* margin-bottom: 3rem; */
+  /* 
   .logo {
     transform: translateY(-25%);
   }
@@ -13,9 +62,6 @@ const NavStyles = styled.nav`
     padding: 0;
     text-align: center;
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
-    grid-gap: 2rem;
     align-items: center;
     margin-top: -6rem;
   }
@@ -55,9 +101,6 @@ const NavStyles = styled.nav`
     @media (max-width: 800px) {
       font-size: 2rem;
     }
-    /* &[aria-current='page'] {
-      color: var(--red);
-    } */
   }
   @media (max-width: 600px) {
     --columns: 4;
@@ -65,13 +108,10 @@ const NavStyles = styled.nav`
     border-bottom: 2px solid var(--grey);
     padding-bottom: 2rem;
     ul {
-      grid-template-rows: auto auto;
-      grid-template-columns: repeat(var(--columns), 1fr);
       justify-items: center;
     }
     .logo-item {
       order: 0;
-      grid-column: 1 / -1;
     }
     .logo {
       transform: none;
@@ -79,10 +119,11 @@ const NavStyles = styled.nav`
   }
   @media (max-width: 500px) {
     --columns: 2;
-  }
+  } */
 `;
 
 export default function Nav () {
+    const [navbarOpen, setNavbarOpen] = useState(false)
     return (
         <NavStyles>
             <ul>
