@@ -3,6 +3,8 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: "Glitch Kibbitz",
+    description: "Glitch Kibbitz is a Seattle band creating klezmer renditions of video game tunes.",
+    twitter: '@GlitchKibbitz'
   },
   plugins: [
     "gatsby-plugin-styled-components",

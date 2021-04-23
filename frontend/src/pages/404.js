@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import SEO from "../components/SEO"
 
 // styles
 const pageStyles = {
@@ -27,15 +28,16 @@ const codeStyles = {
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
+    <>
+      <SEO title={"Not Found"} />
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
+      <h1>Page not found</h1>
+      <p>
+        Sorry!{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        we couldn’t find what you were looking for.
+        Page not found. (We're musicians, not web developers...mostly.)
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -47,7 +49,7 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Go home</Link>.
       </p>
-    </main>
+    </>
   )
 }
 

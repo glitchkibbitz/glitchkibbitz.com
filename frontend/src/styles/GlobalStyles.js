@@ -24,10 +24,9 @@ const GlobalStyles = createGlobalStyle`
 
     }
     header {
-        position: sticky;
+    //    position: sticky;
         top: 0;
         background: var(--dark-purple);
-        z-index: 100;
     }
     * {
         box-sizing: border-box;
@@ -40,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
     }
     main {
         overflow-y: visible;
-        height: 100%;
+        //height: 100%;
         width: 75%;
         //background: #9e9b9ba3;
         background: rgba(0, 0, 0, 0.85);

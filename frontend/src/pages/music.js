@@ -1,26 +1,28 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { FaBandcamp, FaSpotify } from 'react-icons/fa'
+import SEO from '../components/SEO'
 
 const MusicStyles = styled.div`
   justify-content: center;
 `
-const BandcampButton = styled.button`
+const BandcampButton = styled.a`
   background-color: rgb(20,157,203);
   margin-top: 1em;
 `
 
-const SpotifyButton = styled.button`
+const SpotifyButton = styled.a`
   background-color: rgb(28,185,84);
 `
 
 export default function MusicPage() {
   return (
     <>
+      <SEO title={"Listen"} />
     <h1>Listen</h1>
     <h2>Let your ears nosh on some auditory treats.</h2>
-    <BandcampButton><FaBandcamp className="icon" /> Bandcamp</BandcampButton>
-    <SpotifyButton><FaSpotify className="icon" /> Spotify</SpotifyButton>
+    <BandcampButton href="https://glitchkibbitz.bandcamp.com/releases" target="_blank" className="button"><FaBandcamp className="icon" />Bandcamp</BandcampButton>
+    <SpotifyButton href="https://open.spotify.com/artist/3YGg09DqnM5l5pdF6q07Qf?si=SnPj4cd5SOCt9xWjWlfKWw" target="_blank" className="button"><FaSpotify className="icon" /> Spotify</SpotifyButton>
     <div class="bandcamp-album">
         <iframe style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
     </div>

@@ -58,7 +58,7 @@ const StyledFullBackground = styled(FullBackground)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
   position: static !important;
   padding: 0 !important;
 `
