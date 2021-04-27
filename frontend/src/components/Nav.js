@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Logo from './Logo';
@@ -123,12 +123,11 @@ const NavStyles = styled.nav`
 `;
 
 export default function Nav () {
-    const [navbarOpen, setNavbarOpen] = useState(false)
     return (
         <NavStyles>
             <ul>
                 <li>
-                    <Link to="/music">Listen</Link>
+                    <Link to="/music">Music</Link>
                 </li>
                 <li>
                     <Link to="/events">Events</Link>
