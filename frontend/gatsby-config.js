@@ -27,5 +27,14 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Glitch Kibbitz`,
+        short_name: `Glitch Kibbitz`,
+        start_url: `/`,
+        icon: `src/assets/images/icon.png`,
+      },
+    },
   ],
 };
