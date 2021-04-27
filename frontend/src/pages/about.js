@@ -1,7 +1,6 @@
 import * as React from 'react'
-import SEO from '../components/SEO'
+import Seo from '../components/Seo'
 import styled from 'styled-components'
-import { FaEnvelope } from 'react-icons/fa'
 
 const MusicianList = styled.ul`
     list-style: none;
@@ -10,7 +9,7 @@ const MusicianList = styled.ul`
 export default function AboutPage() {
     return (
         <>
-            <SEO title={"About"} />
+            <Seo title={"About"} />
             <h1>About</h1>
             <p>
                 Shortly before PAX West 2019, a stroke of good mazel brought Glitch Kibbitz into existence. Their first performance took place in PAX's Jamspace, featuring 9 original arrangements of video game tunes—all written and practiced in the month before the event. (Hopefully it didn't show too much...)
@@ -25,7 +24,6 @@ export default function AboutPage() {
                     <li>Tyler Eveland (trombone)</li>
                     <li>Shir Goldberg (bass)</li>
                 </MusicianList>
-            <a href="mailto:glitchkibbitz@gmail.com" target="_blank" class="button"><FaEnvelope className="icon" /> Email Us</a>
             </p>
         </>
     );
