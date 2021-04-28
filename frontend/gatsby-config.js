@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     title: "Glitch Kibbitz",
     description: "Glitch Kibbitz is a Seattle band creating klezmer renditions of video game tunes.",
-    twitter: '@GlitchKibbitz'
+    twitter: '@GlitchKibbitz',
+    siteUrl: 'https://glitchkibbitz.com'
   },
   plugins: [
     "gatsby-plugin-styled-components",
