@@ -10,7 +10,6 @@ export default function GamesPage() {
                 Here's some fun games!
             </p>
             <div className="game">
-                <a href="/StarryShtetlDefenderExport/StarryShtetlDefender.html">Shtetl Defender</a>
                 <a href="/games/shtetlDefender">Shtetl Defender</a>
             </div>
         </>
