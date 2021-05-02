@@ -3,6 +3,8 @@
 <url> <loc>https://glitchkibbitz.com/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://glitchkibbitz.com/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://glitchkibbitz.com/events/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://glitchkibbitz.com/games/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://glitchkibbitz.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://glitchkibbitz.com/music/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://glitchkibbitz.com/games/shtetlDefender/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
