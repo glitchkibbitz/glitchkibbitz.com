@@ -34,9 +34,6 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-weight: 700;
     }
-    h2 {
-        padding-top: 1em;
-    }
     main {
         overflow-y: visible;
         //height: 100%;

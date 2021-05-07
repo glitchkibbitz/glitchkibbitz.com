@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Seo from '../components/Seo'
 import styled from 'styled-components'
+import { FaEnvelope } from 'react-icons/fa'
 
 const MusicianList = styled.ul`
     list-style: none;
@@ -23,8 +24,11 @@ export default function AboutPage() {
                     <li>Brandon Hailey (saxophone)</li>
                     <li>Tyler Eveland (trombone)</li>
                     <li>Shir Goldberg (bass)</li>
-                </MusicianList>
+            </MusicianList>
             </p>
+            <h2>Contact</h2>
+            <p>Looking for some klezmer music to spice up your wedding, funeral, or VGM  con? Got a burning question about the freygish scale? Drop us a line.</p>
+            <a href="mailto:glitchkibbitz@gmail.com" target="_blank" rel="noopener noreferrer" className="button"><FaEnvelope className="icon" /> Email Us</a>
         </>
     );
 }

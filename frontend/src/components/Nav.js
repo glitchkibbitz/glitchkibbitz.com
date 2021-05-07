@@ -138,10 +138,10 @@ export default function Nav () {
                   </Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/games">Games</Link>
                 </li>                
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/about">About</Link>
                 </li>
             </ul>
         </NavStyles>

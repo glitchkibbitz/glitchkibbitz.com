@@ -17,7 +17,7 @@ export default function MusicPage() {
     <>
       <Seo title={"Music"} />
       <h1>Music</h1>
-      <h2>Let your ears nosh on some auditory treats.</h2>
+      <h3>Let your ears nosh on some auditory treats.</h3>
       <BandcampButton href="https://glitchkibbitz.bandcamp.com/releases" target="_blank" className="button"><FaBandcamp className="icon" /> Bandcamp</BandcampButton>
       <SpotifyButton href="https://open.spotify.com/artist/3YGg09DqnM5l5pdF6q07Qf?si=SnPj4cd5SOCt9xWjWlfKWw" target="_blank" className="button"><FaSpotify className="icon" /> Spotify</SpotifyButton>
       <div className="bandcamp-album">
