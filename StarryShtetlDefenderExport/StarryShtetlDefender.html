@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
+
 <head>
 	<meta charset='utf-8' />
 	<meta name='viewport' content='width=device-width, user-scalable=no' />
 	<link id='-gd-engine-icon' rel='icon' type='image/png' href='favicon.png' />
 	<title>Starry Shtetl Defender</title>
 	<style type='text/css'>
-
 		body {
 			touch-action: none;
 			margin: 0;
@@ -85,7 +85,7 @@
 			position: relative;
 		}
 
-		#status-indeterminate > div {
+		#status-indeterminate>div {
 			width: 4.5px;
 			height: 0;
 			border-style: solid;
@@ -95,14 +95,37 @@
 			position: absolute;
 		}
 
-		#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
-		#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
-		#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
-		#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
-		#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
-		#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
-		#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
-		#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
+		#status-indeterminate>div:nth-child(1) {
+			transform: rotate(22.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(2) {
+			transform: rotate(67.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(3) {
+			transform: rotate(112.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(4) {
+			transform: rotate(157.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(5) {
+			transform: rotate(202.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(6) {
+			transform: rotate(247.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(7) {
+			transform: rotate(292.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(8) {
+			transform: rotate(337.5deg);
+		}
 
 		#status-notice {
 			margin: 0 100px;
@@ -114,13 +137,16 @@
 	</style>
 
 </head>
+
 <body>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
 	<div id='status'>
-		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
+		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'>
+			<div id='status-progress-inner'></div>
+		</div>
 		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>
 			<div></div>
 			<div></div>
@@ -141,7 +167,7 @@
 		var setStatusMode;
 		var setStatusNotice;
 
-		(function() {
+		(function () {
 
 			const EXECUTABLE_NAME = 'Starry Shtetl Defender';
 			const MAIN_PACK = 'Starry Shtetl Defender.pck';
@@ -182,7 +208,7 @@
 				[statusProgress, statusIndeterminate, statusNotice].forEach(elem => {
 					elem.style.display = 'none';
 				});
-				animationCallbacks = animationCallbacks.filter(function(value) {
+				animationCallbacks = animationCallbacks.filter(function (value) {
 					return (value != animateStatusIndeterminate);
 				});
 				switch (mode) {
@@ -230,7 +256,7 @@
 			engine.setProgressFunc((current, total) => {
 
 				if (total > 0) {
-					statusProgressInner.style.width = current/total * 100 + '%';
+					statusProgressInner.style.width = current / total * 100 + '%';
 					setStatusMode('progress');
 					if (current === total) {
 						// wait for progress bar animation
@@ -264,6 +290,10 @@
 		})();
 	//]]></script>
 </body>
-<div style="text-align:center;"><iframe style="border: 0; width: 500px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=153649330/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/glitch-kibbitz">Glitch Kibbitz by Glitch Kibbitz</a></iframe></div>
-</html>
+<div style="text-align:center;">
+	<iframe style="border: 0; width: 500px; height: 42px;"
+		src="https://bandcamp.com/EmbeddedPlayer/album=819699252/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+		seamless><a href="https://glitchkibbitz.bandcamp.com/album/starry-shtetl">Starry Shtetl by Glitch
+			Kibbitz</a></iframe>
 
+</html>
