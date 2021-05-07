@@ -19,7 +19,7 @@ export default function StarryShtetlDefenderPage() {
             <h1>Starry Shtetl Defender</h1>
 
             <div className="bandcamp-album">
-                <iframe title="Misirlou Sisters by Glitch Kibbitz" style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
+                <iframe title="Starry Shtetl by Glitch Kibbitz" style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=819699252/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/starry-shtetl">Starry Shtetl by Glitch Kibbitz</a></iframe>
             </div>
 
             <ShtetlDefender>
@@ -29,6 +29,8 @@ export default function StarryShtetlDefenderPage() {
                     src="https://gotm.io/browncanstudios/starryshtetldefender?forceFullscreen=true"
                 />
             </ShtetlDefender>
+
+            <i>Game not loading? Try <a href="/StarryShtetlDefenderExport/StarryShtetlDefender.html">this version</a>.</i>
         </>
     );
 }
