@@ -7,6 +7,9 @@ import styled from 'styled-components'
 const ShtetlDefender = styled.div`
   display: flex;
   min-height: 500px;
+  @media (max-width: 588px) {
+      min-height: 350px;
+  }
 `
 
 export default function StarryShtetlDefenderPage() {
@@ -21,7 +24,7 @@ export default function StarryShtetlDefenderPage() {
 
             <ShtetlDefender>
                 <IframeResizer
-                    style={{ border: '0', width: '100%', height: '' }}
+                    style={{ border: '0', width: '100%'}}
                     title="Shtetl Defender"
                     src="https://gotm.io/browncanstudios/starryshtetldefender?forceFullscreen=true"
                 />
