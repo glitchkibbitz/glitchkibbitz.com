@@ -10,6 +10,7 @@ export default function Seo({ children, location, description, title, image }) {
           title
           description
           twitter
+          image
         }
       }
     }
@@ -24,13 +25,14 @@ export default function Seo({ children, location, description, title, image }) {
             <meta name="description" content={site.siteMetadata.description} />
             {/* Open Graph */}
             {location && <meta property="og:url" content={location.href} />}
-            <meta property="og:title" content={title} key="ogtitle" />
+            <meta property="og:title" content={site.siteMetadata.title} key="ogtitle" />
             <meta
                 propery="og:site_name"
                 content={site.siteMetadata.title}
                 key="ogsitename"
             />
-            <meta property="og:description" content={description} key="ogdesc" />
+            <meta property="og:image" content={site.siteMetadata.image} />
+            <meta property="og:description" content={site.siteMetadata.description} key="ogdesc" />
             {children}
         </Helmet>
     );
