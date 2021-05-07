@@ -5,7 +5,8 @@ import IframeResizer from 'iframe-resizer-react'
 import styled from 'styled-components'
 
 const ShtetlDefender = styled.div`
-  border: 0;
+  display: flex;
+  min-height: 500px;
 `
 
 export default function StarryShtetlDefenderPage() {
@@ -18,13 +19,13 @@ export default function StarryShtetlDefenderPage() {
                 <iframe title="Misirlou Sisters by Glitch Kibbitz" style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
             </div>
 
-            <div class="video">
+            <ShtetlDefender>
                 <IframeResizer
-                    style={{ border: '0', width: '50%', height: '50%' }}
+                    style={{ border: '0', width: '100%', height: '' }}
                     title="Shtetl Defender"
                     src="https://gotm.io/browncanstudios/starryshtetldefender?forceFullscreen=true"
                 />
-            </div>
+            </ShtetlDefender>
         </>
     );
 }
