@@ -9,14 +9,19 @@ module.exports = {
     image: '/images/icon.png'
   },
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: "G-G2700KJ808",
+        // your google analytics tracking id
+        trackingId: `G-G2700KJ808`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
       },
     },
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
