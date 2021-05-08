@@ -21,7 +21,11 @@ export default function MusicPage() {
       <BandcampButton href="https://glitchkibbitz.bandcamp.com/releases" target="_blank" className="button"><FaBandcamp className="icon" /> Bandcamp</BandcampButton>
       <SpotifyButton href="https://open.spotify.com/artist/3YGg09DqnM5l5pdF6q07Qf?si=SnPj4cd5SOCt9xWjWlfKWw" target="_blank" className="button"><FaSpotify className="icon" /> Spotify</SpotifyButton>
       <div className="bandcamp-album">
-          <iframe title="Misirlou Sisters by Glitch Kibbitz" style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
+        <iframe style={{ border: '0', height: '406px' }} src="https://bandcamp.com/EmbeddedPlayer/album=819699252/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/starry-shtetl">Starry Shtetl by Glitch Kibbitz</a></iframe>
+      </div>
+      
+      <div className="bandcamp-album">
+        <iframe title="Misirlou Sisters by Glitch Kibbitz" style={{ border: '0', height: '150px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch Kibbitz</a></iframe>
       </div>
 
       <div className="bandcamp-album">
