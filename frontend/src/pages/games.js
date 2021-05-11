@@ -10,7 +10,7 @@ export default function GamesPage() {
                 Glitch Kibbitz doesn't just make music—enjoy one of our custom games to accompany your klezmer listening session!
             </p>
             <div className="game">
-                <a href="/games/starryShtetlDefender">Shtetl Defender</a>
+                <a href="/games/starryShtetlDefender">Starry Shtetl Defender</a>
             </div>
         </>
     );

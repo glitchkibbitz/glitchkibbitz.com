@@ -30,7 +30,7 @@ export default function StarryShtetlDefenderPage() {
                 />
             </ShtetlDefender>
 
-            <i>Game not loading? Try <a href="/StarryShtetlDefenderExport/StarryShtetlDefender.html">this version</a>.</i>
+            <i>Game not loading? Try <a href="/StarryShtetlDefenderExport/StarryShtetlDefender.html">this fullscreen version</a>.</i>
         </>
     );
 }
