@@ -102,6 +102,20 @@ body {
     transform: translateY(-3px);
 }
 
+/* Intro Section */
+.band-intro {
+    padding: 6rem 2rem;
+    background: var(--white);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
 /* Latest Release Section */
 .latest-release {
     padding: 6rem 2rem;

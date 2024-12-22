@@ -4,7 +4,13 @@
     <div class="hero-content">
         <h1 class="hero-title">{{ this.hero_title }}</h1>
         <p class="hero-subtitle">{{ this.hero_subtitle }}</p>
-        <a href="{{ '/tour'|url }}" class="cta-button">{{ this.cta_title }}</a>
+        <a href="{{ this.cta_url }}" class="cta-button">{{ this.cta_title }}</a>
+    </div>
+</section>
+
+<section class="band-intro">
+    <div class="intro-content">
+        {{ this.about_text }}
     </div>
 </section>
 
