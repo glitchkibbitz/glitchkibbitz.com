@@ -7,7 +7,7 @@
   <title>{% block title %}{{ config.BAND_NAME }}{% endblock %}</title>
   <link rel="stylesheet" href="{{ '/static/styles/main.css'|url }}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/07af19e0f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,33 +30,31 @@
       <h2 class="section-title">Connect With Us</h2>
       <p>Stay updated with our latest releases and tour dates</p>
       <div class="social-links">
-        <!-- {% if config.SOCIAL %} -->
-        {% if config.SOCIAL.BANDCAMP %}
-        <a href="{{ config.SOCIAL.BANDCAMP }}" class="social-link">
-          <i class="fab fa-bandcamp"></i>
+        {% if config.PROJECT.BANDCAMP %}
+        <a href="{{ config.PROJECT.BANDCAMP }}" class="social-link">
+          <i class="fa-brands fa-bandcamp"></i>
         </a>
         {% endif %}
-        {% if config.SOCIAL.SPOTIFY %}
-        <a href="{{ config.SOCIAL.SPOTIFY }}" class="social-link">
-          <i class="fab fa-spotify"></i>
+        {% if config.PROJECT.SPOTIFY %}
+        <a href="{{ config.PROJECT.SPOTIFY }}" class="social-link">
+          <i class="fa-brands fa-spotify"></i>
         </a>
         {% endif %}
-        {% if config.SOCIAL.INSTAGRAM %}
-        <a href="{{ config.SOCIAL.INSTAGRAM }}" class="social-link">
-          <i class="fab fa-instagram"></i>
+        {% if config.PROJECT.INSTAGRAM %}
+        <a href="{{ config.PROJECT.INSTAGRAM }}" class="social-link">
+          <i class="fa-brands fa-instagram"></i>
         </a>
         {% endif %}
-        {% if config.SOCIAL.FACEBOOK %}
-        <a href="{{ config.SOCIAL.FACEBOOK }}" class="social-link">
-          <i class="fab fa-facebook"></i>
+        {% if config.PROJECT.FACEBOOK %}
+        <a href="{{ config.PROJECT.FACEBOOK }}" class="social-link">
+          <i class="fa-brands fa-facebook"></i>
         </a>
         {% endif %}
-        {% if config.SOCIAL.EMAIL %}
-        <a href="{{ config.SOCIAL.email }}" class="social-link">
-          <i class="fab fa-email"></i>
+        {% if config.PROJECT.EMAIL %}
+        <a href="{{ config.PROJECT.email }}" class="social-link">
+          <i class="fa-solid fa-envelope"></i>
         </a>
         {% endif %}
-        <!-- {% endif %} -->
       </div>
     </div>
   </footer>

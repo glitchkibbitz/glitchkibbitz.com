@@ -1,7 +1,9 @@
 [project]
 name = glitch-kibbitz
-
-[SOCIAL]
-SPOTIFY = https://open.spotify.com/artist/your-artist-id
-INSTAGRAM = https://instagram.com/your-band
-YOUTUBE = https://youtube.com/your-band
+BAND_NAME = Glitch Kibbitz
+SPOTIFY = https://open.spotify.com/artist/3YGg09DqnM5l5pdF6q07Qf
+INSTAGRAM = https://instagram.com/glitchkibbitz
+BANDCAMP = https://glitchkibbitz.bandcamp.com/
+FACEBOOK = https://facebook.com/glitchkibbitz
+NEWSLETTER = https://glitchkibbitz.us4.list-manage.com/subscribe?u=8e485571b32a9a147c9b9d3ee&id=b2d101002e
+EMAIL = glitchkibbitz@gmail.com
