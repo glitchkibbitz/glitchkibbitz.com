@@ -1,0 +1,31 @@
+_model: home
+---
+title: Welcome to {{ config.BAND_NAME }}
+---
+hero_title: Experience the Sound of Tomorrow
+---
+hero_subtitle: Join us on a journey through sound and emotion
+---
+latest_releases:
+#### release ####
+title: New Album - "Eternal Echo"
+date: December 2024
+image: /static/images/album1.jpg
+----
+#### release ####
+title: Single - "Midnight Dreams"
+date: November 2024
+image: /static/images/single1.jpg
+---
+tour_dates:
+#### tour ####
+date: 2024-12-31
+venue: Crystal Ballroom
+location: Portland, OR
+ticket_link: #
+----
+#### tour ####
+date: 2025-01-15
+venue: The Paramount
+location: Seattle, WA
+ticket_link: #

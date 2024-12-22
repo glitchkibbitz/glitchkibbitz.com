@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.BAND_NAME }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ '/static/styles/main.css'|url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="{{ '/'|url }}" class="nav-logo">{{ config.BAND_NAME }}</a>
+      <div class="nav-links">
+        <a href="{{ '/music'|url }}" class="nav-link">Music</a>
+        <a href="{{ '/tour'|url }}" class="nav-link">Tour</a>
+        <a href="{{ '/about'|url }}" class="nav-link">About</a>
+        <a href="{{ '/contact'|url }}" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <footer class="contact">
+    <div class="contact-content">
+      <h2 class="section-title">Connect With Us</h2>
+      <p>Stay updated with our latest releases and tour dates</p>
+      <div class="social-links">
+        {% if config.SOCIAL %}
+        {% if config.SOCIAL.SPOTIFY %}
+        <a href="{{ config.SOCIAL.SPOTIFY }}" class="social-link">
+          <i class="fab fa-spotify"></i>
+        </a>
+        {% endif %}
+        {% if config.SOCIAL.INSTAGRAM %}
+        <a href="{{ config.SOCIAL.INSTAGRAM }}" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        {% endif %}
+        {% if config.SOCIAL.YOUTUBE %}
+        <a href="{{ config.SOCIAL.YOUTUBE }}" class="social-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+        {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

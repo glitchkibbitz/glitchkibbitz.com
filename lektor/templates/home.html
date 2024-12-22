@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">{{ this.hero_title }}</h1>
+        <p class="hero-subtitle">{{ this.hero_subtitle }}</p>
+        <a href="{{ '/tour'|url }}" class="cta-button">See Tour Dates</a>
+    </div>
+</section>
+
+<section class="latest-release">
+    <h2 class="section-title">Latest Releases</h2>
+    <div class="release-grid">
+        {% for release in this.latest_releases.blocks %}
+        <div class="release-card">
+            <img src="{{ release.image }}" alt="{{ release.title }}" class="release-image">
+            <div class="release-content">
+                <h3 class="release-title">{{ release.title }}</h3>
+                <p class="release-date">{{ release.date }}</p>
+                <a href="#" class="cta-button">Listen Now</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="tour-dates">
+    <h2 class="section-title">Upcoming Shows</h2>
+    <div class="tour-grid">
+        {% for show in this.tour_dates.blocks %}
+        <div class="tour-item">
+            <div class="tour-date">{{ show.date|dateformat('MMMM D, YYYY') }}</div>
+            <div class="tour-location">
+                <div>{{ show.venue }}</div>
+                <div>{{ show.location }}</div>
+            </div>
+            <a href="{{ show.ticket_link }}" class="cta-button tour-button">Get Tickets</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
