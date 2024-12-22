@@ -22,8 +22,8 @@
             <img src="{{ release.image }}" alt="{{ release.title }}" class="release-image">
             <div class="release-content">
                 <h3 class="release-title">{{ release.title }}</h3>
-                <p class="release-date">{{ release.date }}</p>
-                <a href="#" class="cta-button">Listen Now</a>
+                <p class="release-date">Released {{ release.date }}</p>
+                <a href="{{ release.url }}" class="cta-button">Listen Now</a>
             </div>
         </div>
         {% endfor %}
@@ -40,7 +40,9 @@
                 <div>{{ show.venue }}</div>
                 <div>{{ show.location }}</div>
             </div>
+            {% if show.ticket_link %}
             <a href="{{ show.ticket_link }}" class="cta-button tour-button">Get Tickets</a>
+            {% endif %}
         </div>
         {% endfor %}
     </div>

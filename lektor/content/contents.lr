@@ -2,26 +2,30 @@ _model: home
 ---
 title: Welcome to {{ config.BAND_NAME }}
 ---
-hero_title: Experience the Sound of Tomorrow
+hero_title: Video Game Tunes + Klezmer
 ---
-hero_subtitle: Join us on a journey through sound and emotion
+hero_subtitle: Your favorite video game soundtracks reimagined through the soul-stirring lens of Jewish folk music
 ---
 cta_title: Listen Now
 ---
 latest_releases:
 
 #### release ####
-title: New Album - "Eternal Echo"
+title: New Album - Super Glitch Kibbitz
 ----
-date: 2024-12-15
+date: 2024-12-12
 ----
-image: 
+image: https://f4.bcbits.com/img/a4289810082_16.jpg
+----
+url: https://glitchkibbitz.bandcamp.com/album/super-glitch-kibbitz
 #### release ####
-title: Single - "Midnight Dreams"
+title: Saved Inventory EP
 ----
-date: 2024-11-07
+date: 2023-12-11
 ----
-image: 
+image: https://f4.bcbits.com/img/a2906215559_16.jpg
+----
+url: https://glitchkibbitz.bandcamp.com/album/saved-inventory
 ---
 tour_dates:
 
@@ -33,3 +37,7 @@ venue:
 location: 
 ----
 ticket_link: 
+---
+about_text: Since 2019, we've been asking the important questions: What if Mario grabbed a clarinet instead of a mushroom? What if Master Chief celebrated with a hora? We've taken our musical mishigas from PAX West to MAGFest, put out half a dozen releases, and even created our own games!
+---
+cta_url: https://glitchkibbitz.bandcamp.com/
