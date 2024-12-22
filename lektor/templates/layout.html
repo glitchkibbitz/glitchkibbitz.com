@@ -23,14 +23,19 @@
     </div>
   </nav>
 
-  {% block content %}{% endblock %}
+  {% block body %}{% endblock %}
 
   <footer class="contact">
     <div class="contact-content">
       <h2 class="section-title">Connect With Us</h2>
       <p>Stay updated with our latest releases and tour dates</p>
       <div class="social-links">
-        {% if config.SOCIAL %}
+        <!-- {% if config.SOCIAL %} -->
+        {% if config.SOCIAL.BANDCAMP %}
+        <a href="{{ config.SOCIAL.BANDCAMP }}" class="social-link">
+          <i class="fab fa-bandcamp"></i>
+        </a>
+        {% endif %}
         {% if config.SOCIAL.SPOTIFY %}
         <a href="{{ config.SOCIAL.SPOTIFY }}" class="social-link">
           <i class="fab fa-spotify"></i>
@@ -41,12 +46,17 @@
           <i class="fab fa-instagram"></i>
         </a>
         {% endif %}
-        {% if config.SOCIAL.YOUTUBE %}
-        <a href="{{ config.SOCIAL.YOUTUBE }}" class="social-link">
-          <i class="fab fa-youtube"></i>
+        {% if config.SOCIAL.FACEBOOK %}
+        <a href="{{ config.SOCIAL.FACEBOOK }}" class="social-link">
+          <i class="fab fa-facebook"></i>
         </a>
         {% endif %}
+        {% if config.SOCIAL.EMAIL %}
+        <a href="{{ config.SOCIAL.email }}" class="social-link">
+          <i class="fab fa-email"></i>
+        </a>
         {% endif %}
+        <!-- {% endif %} -->
       </div>
     </div>
   </footer>
