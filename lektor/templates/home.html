@@ -31,7 +31,8 @@
             <img src="{{ release.image }}" alt="{{ release.title }}" class="release-image">
             <div class="release-content">
                 <h3 class="release-title">{{ release.title }}</h3>
-                <p class="release-date">Released {{ release.date }}</p>
+                <p class="release-date"><i>Released {{ release.date }}</i></p>
+                <p class="release-date">{{ release.description }}</p>
                 <a href="{{ release.url }}" class="cta-button">
                     <i class="fa-brands fa-bandcamp"></i>
                     Listen Now
@@ -39,6 +40,9 @@
             </div>
         </div>
         {% endfor %}
+    </div>
+    <div class="hero-ctas">
+        <i>We have plenty more releases on <a href="{{ config.PROJECT.BANDCAMP }}">Bandcamp</a>!</i>
     </div>
 </section>
 
