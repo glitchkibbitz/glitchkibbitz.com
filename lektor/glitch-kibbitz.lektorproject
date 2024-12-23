@@ -7,3 +7,6 @@ BANDCAMP = https://glitchkibbitz.bandcamp.com/
 FACEBOOK = https://facebook.com/glitchkibbitz
 NEWSLETTER = https://glitchkibbitz.us4.list-manage.com/subscribe?u=8e485571b32a9a147c9b9d3ee&id=b2d101002e
 EMAIL = glitchkibbitz@gmail.com
+
+[servers.ghpages]
+target = ghpages://glitchkibbitz/glitchkibbitz.com?cname=glitchkibbitz.com
