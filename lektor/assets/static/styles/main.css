@@ -95,7 +95,7 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/static/images/hero-bg.png') center/cover;
+    url('/static/images/hero-bg.jpg') center/cover;
     color: var(--white);
 }
 
@@ -281,7 +281,7 @@ body {
 .page-header {
     padding: 12rem 2rem 0 2rem;
     background: linear-gradient(rgba(139, 30, 63, 0.95), rgba(139, 30, 63, 0.95)),
-    url('/static/images/hero-bg.png') center/cover;
+    url('/static/images/hero-bg.jpg') center/cover;
     color: var(--white);
     position: relative;
     border-bottom: 3px solid var(--secondary-accent);
