@@ -1,0 +1,42 @@
+{% macro render_events(events) %}
+<div class="events-grid">
+    {% for event in events.blocks %}
+    <div class="event-item">
+        <div class="event-date">
+            <div class="date-primary">{{ event.date.strftime('%b %d') }}</div>
+            <div class="date-secondary">{{ event.date.strftime('%Y') }}</div>
+        </div>
+        <div class="event-details">
+            <h3 class="event-title">{{ event.title }}</h3>
+            <div class="event-meta">
+                <span class="event-type">
+                    <i class="fas {% if event.event_type == 'concert' %}fa-music
+                                        {% elif event.event_type == 'listening_party' %}fa-headphones
+                                        {% elif event.event_type == 'meetup' %}fa-users
+                                        {% else %}fa-calendar{% endif %}"></i>
+                    {{ event.event_type|replace('_', ' ')|title }}
+                </span>
+                <span class="event-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    {{ event.venue }} {{ event.location }}
+                </span>
+            </div>
+            <div class="event-description">
+                {{ event.description }}
+            </div>
+        </div>
+        <div class="event-action">
+            {% if event.ticket_link %}
+            <a href="{{ event.ticket_link }}" class="cta-button" target="_blank" rel="noopener">
+                {% if event.event_type == 'concert' %}
+                Get Tickets
+                {% else %}
+                Register
+                {% endif %}
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}

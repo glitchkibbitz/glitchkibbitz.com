@@ -1,0 +1,24 @@
+_model: events_page
+---
+title: Events
+---
+intro:
+
+Join us at our upcoming performances, listening parties, and meet & greets. We love connecting with our fans!
+---
+events:
+
+#### event ####
+date: 2025-01-24
+----
+title: It's a surprise!
+----
+venue: More details coming soon...
+----
+location: 
+----
+description: 
+----
+event_type: concert
+----
+ticket_link: 

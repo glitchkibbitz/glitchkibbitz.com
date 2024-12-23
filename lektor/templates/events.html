@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% from "macros/events_list.html" import render_events %}
+{% block body %}
+<div class="page-header">
+    <div class="page-header-content">
+        <h1 class="page-title">{{ this.title }}</h1>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="content-wrapper">
+        <div class="events-intro">
+            {{ this.intro }}
+        </div>
+
+    {{ render_events(this.events) }}
+    </div>
+</div>
+{% endblock %}
