@@ -10,3 +10,6 @@ EMAIL = glitchkibbitz@gmail.com
 
 [servers.ghpages]
 target = ghpages://glitchkibbitz/glitchkibbitz.com?cname=glitchkibbitz.com
+
+[packages]
+lektor-scss = 1.5.0
