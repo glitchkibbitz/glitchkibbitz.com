@@ -346,13 +346,13 @@ body {
 }
 
 /* Music Page Styles */
-/* .releases-grid {
+.releases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
 }
-
+/* 
 .release-image-container {
     position: relative;
     aspect-ratio: 1;
