@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{{ config.BAND_NAME }}{% endblock %}</title>
   <link rel="stylesheet" href="{{ '/static/styles/main.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/styles/wordmark.css'|url }}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/07af19e0f4.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +14,23 @@
 <body>
   <nav class="nav">
     <div class="nav-content">
-      <a href="{{ '/'|url }}" class="nav-logo">{{ config.PROJECT.BAND_NAME }}</a>
+      <a href="{{ '/'|url }}">
+        <div class="wordmark">
+          <div class="inner">
+            <h1>
+              <span class="glitch-kibbitz">
+                <span class="letter G">G</span>
+                <span class="letter l">l</span>
+                <span class="letter i">i</span>
+                <span class="letter t">t</span>
+                <span class="letter c">c</span>
+                <span class="letter h">h</span>
+                <span class="kibbitz">Kibbitz</span>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </a>
       <div class="nav-links">
         <a href="{{ '/music'|url }}" class="nav-link">Music</a>
         <a href="{{ '/tour'|url }}" class="nav-link">Tour</a>
@@ -22,6 +39,8 @@
       </div>
     </div>
   </nav>
+
+
 
   {% block body %}{% endblock %}
 
