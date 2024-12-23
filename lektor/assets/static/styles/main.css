@@ -346,7 +346,7 @@ body {
 }
 
 /* Music Page Styles */
-.releases-grid {
+/* .releases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -382,7 +382,7 @@ body {
 
 .release-image-container:hover .release-overlay {
     opacity: 1;
-}
+} */
 
 .play-button {
     background: var(--secondary-accent);
