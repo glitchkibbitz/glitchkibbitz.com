@@ -4,6 +4,10 @@
   margin: 0;
   background-size: 150em;
   text-align: center;
+
+  > a {
+    text-decoration: none;  
+  }
 }
 
 .inner {
