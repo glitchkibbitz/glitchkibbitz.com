@@ -4,7 +4,16 @@
     <div class="hero-content">
         <h1 class="hero-title">{{ this.hero_title }}</h1>
         <p class="hero-subtitle">{{ this.hero_subtitle }}</p>
-        <a href="{{ this.cta_url }}" class="cta-button">{{ this.cta_title }}</a>
+        <div class="hero-ctas">
+            <a href="https://glitchkibbitz.bandcamp.com/" class="cta-button">
+                <i class="fa-brands fa-bandcamp"></i>
+                Listen Now
+            </a>
+            <a href="#" class="cta-button secondary">
+                <i class="fas fa-envelope"></i>
+                Join the List
+            </a>
+        </div>
     </div>
 </section>
 
@@ -23,7 +32,10 @@
             <div class="release-content">
                 <h3 class="release-title">{{ release.title }}</h3>
                 <p class="release-date">Released {{ release.date }}</p>
-                <a href="{{ release.url }}" class="cta-button">Listen Now</a>
+                <a href="{{ release.url }}" class="cta-button">
+                    <i class="fa-brands fa-bandcamp"></i>
+                    Listen Now
+                </a>
             </div>
         </div>
         {% endfor %}
