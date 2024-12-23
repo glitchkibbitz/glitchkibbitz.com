@@ -1,0 +1,29 @@
+{% macro render_socials() %}
+<div class="social-links">
+    {% if config.PROJECT.BANDCAMP %}
+    <a href="{{ config.PROJECT.BANDCAMP }}" class="social-link">
+        <i class="fa-brands fa-bandcamp"></i>
+    </a>
+    {% endif %}
+    {% if config.PROJECT.SPOTIFY %}
+    <a href="{{ config.PROJECT.SPOTIFY }}" class="social-link">
+        <i class="fa-brands fa-spotify"></i>
+    </a>
+    {% endif %}
+    {% if config.PROJECT.INSTAGRAM %}
+    <a href="{{ config.PROJECT.INSTAGRAM }}" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    {% endif %}
+    {% if config.PROJECT.FACEBOOK %}
+    <a href="{{ config.PROJECT.FACEBOOK }}" class="social-link">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    {% endif %}
+    {% if config.PROJECT.EMAIL %}
+    <a href="{{ config.PROJECT.email }}" class="social-link">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    {% endif %}
+</div>
+{% endmacro %}

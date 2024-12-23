@@ -1,3 +1,5 @@
+{% from "macros/socials.html" import render_socials %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,9 +35,9 @@
       </a>
       <div class="nav-links">
         <a href="{{ '/music'|url }}" class="nav-link">Music</a>
-        <a href="{{ '/tour'|url }}" class="nav-link">Tour</a>
+        <a href="{{ '/games'|url }}" class="nav-link">Games</a>
+        <a href="{{ '/events'|url }}" class="nav-link">Events</a>
         <a href="{{ '/about'|url }}" class="nav-link">About</a>
-        <a href="{{ '/contact'|url }}" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
@@ -48,33 +50,7 @@
     <div class="contact-content">
       <h2 class="section-title">Connect With Us</h2>
       <p>Stay updated with our latest releases and tour dates</p>
-      <div class="social-links">
-        {% if config.PROJECT.BANDCAMP %}
-        <a href="{{ config.PROJECT.BANDCAMP }}" class="social-link">
-          <i class="fa-brands fa-bandcamp"></i>
-        </a>
-        {% endif %}
-        {% if config.PROJECT.SPOTIFY %}
-        <a href="{{ config.PROJECT.SPOTIFY }}" class="social-link">
-          <i class="fa-brands fa-spotify"></i>
-        </a>
-        {% endif %}
-        {% if config.PROJECT.INSTAGRAM %}
-        <a href="{{ config.PROJECT.INSTAGRAM }}" class="social-link">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        {% endif %}
-        {% if config.PROJECT.FACEBOOK %}
-        <a href="{{ config.PROJECT.FACEBOOK }}" class="social-link">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        {% endif %}
-        {% if config.PROJECT.EMAIL %}
-        <a href="{{ config.PROJECT.email }}" class="social-link">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        {% endif %}
-      </div>
+      {{ render_socials() }}
     </div>
   </footer>
 </body>
