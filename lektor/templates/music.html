@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="page-header">
+    <div class="page-header-content">
+        <h1 class="page-title">{{ this.title }}</h1>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="content-wrapper">
+        <div class="music-intro">
+            {{ this.intro }}
+        </div>
+
+        <section class="releases-grid">
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2862292099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/super-glitch-kibbitz">Super Glitch Kibbitz by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=461896133/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/saved-inventory">Saved Inventory by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=3952718840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/rocket-rockout">Rocket Rockout by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=819699252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/starry-shtetl">Starry Shtetl by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1366043256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/misirlou-sisters">Misirlou Sisters by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=153649330/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/glitch-kibbitz">Glitch Kibbitz by Glitch
+                    Kibbitz</a></iframe>
+            <iframe style="border: 0; width: 350px; height: 470px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=3753898111/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://glitchkibbitz.bandcamp.com/album/kass-waltz">Kass&#39; Waltz by Glitch
+                    Kibbitz</a></iframe>
+            <!-- {% for release in this.releases.blocks %}
+            <div class="release-card">
+                <div class="release-image-container">
+                    <img src="{{ release.image }}" alt="{{ release.title }}" class="release-image">
+                    {% if release.bandcamp_embed %}
+                    <div class="release-overlay">
+                        <button class="play-button" onclick="toggleBandcamp({{ loop.index }})">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="release-content">
+                    <h3 class="release-title">{{ release.title }}</h3>
+                    <p class="release-date">{{ release.date }}</p>
+                    {% if release.bandcamp_embed %}
+                    <div id="bandcamp-embed-{{ loop.index }}" class="bandcamp-embed" style="display: none;">
+                        {{ release.bandcamp_embed }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %} -->
+        </section>
+
+        <section class="streaming-services">
+            <h2>Listen Everywhere</h2>
+            <div class="streaming-grid">
+                {% for service in this.streaming_services.blocks %}
+                <a href="{{ service.url }}" class="streaming-link" target="_blank" rel="noopener">
+                    <i class="{{ service.icon }}"></i>
+                    <span>{{ service.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleBandcamp(index) {
+        const embed = document.getElementById(`bandcamp-embed-${index}`);
+        const currentDisplay = embed.style.display;
+        embed.style.display = currentDisplay === 'none' ? 'block' : 'none';
+    }
+</script>
+{% endblock %}

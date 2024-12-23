@@ -1,0 +1,28 @@
+_model: music
+---
+title: Our Music
+---
+intro: Experience our musical journey through our releases, or find us on your favorite streaming platform.
+---
+releases: 
+---
+streaming_services:
+
+#### streaming_service ####
+name: Spotify
+----
+icon: fa-brands fa-spotify
+----
+url: https://open.spotify.com/artist/3YGg09DqnM5l5pdF6q07Qf
+#### streaming_service ####
+name: Apple Music
+----
+icon: fa-brands fa-apple
+----
+url: https://music.apple.com/us/artist/glitch-kibbitz/1509520519
+#### streaming_service ####
+name: YouTube Music
+----
+icon: fa-brands fa-youtube
+----
+url: https://music.youtube.com/channel/UCITllfbEjMbQnv0gGavlYNg
