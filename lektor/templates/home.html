@@ -47,22 +47,7 @@
     </div>
 </section>
 
-<section class="tour-dates">
-    <h2 class="section-title">Upcoming Events</h2>
-    {{ render_events(this.events) }}
-    <!-- <div class="tour-grid">
-        {% for event in this.events.blocks %}
-        <div class="tour-item">
-            <div class="tour-date">{{ event.date|dateformat('MMMM D, YYYY') }}</div>
-            <div class="tour-location">
-                <div>{{ event.venue }}</div>
-                <div>{{ event.location }}</div>
-            </div>
-            {% if event.ticket_link %}
-            <a href="{{ event.ticket_link }}" class="cta-button tour-button">Get Tickets</a>
-            {% endif %}
-        </div>
-        {% endfor %}
-    </div> -->
+<section class="content-wrapper wide">
+    {{ render_events(site.get('/events').events) }}
 </section>
 {% endblock %}

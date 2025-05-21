@@ -58,36 +58,3 @@
     color: #636e72;
     margin-bottom: 1rem;
 }
-
-/* Tour Dates Section */
-.tour-dates {
-    padding: 6rem 2rem;
-}
-
-.tour-grid {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.tour-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    background: var(--white);
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.tour-date {
-    font-weight: 600;
-}
-
-.tour-location {
-    font-weight: 500;
-}
-
-.tour-button {
-    justify-self: end;
-}
