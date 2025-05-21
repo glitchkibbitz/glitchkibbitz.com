@@ -1,6 +1,4 @@
-{% macro render_events(events) %}
-<div class="events-grid">
-    {% for event in events.blocks %}
+{% macro render_event(event) %}
     <div class="event-item">
         <div class="event-date">
             <div class="date-primary">{{ event.date.strftime('%b %d') }}</div>
@@ -37,6 +35,29 @@
             {% endif %}
         </div>
     </div>
-    {% endfor %}
+{% endmacro %}
+
+{% macro render_events(events) %}
+
+{# Render upcoming events #}
+<h2 class="section-title">Upcoming Events</h2>
+{% for event in events.blocks %}
+<div class="events-grid">
+    {% if event.date > now %}
+        {{ render_event(event) }}
+    {% endif %}
 </div>
+{% endfor %}
+
+<br />
+
+{# Render past events section if there are any #}
+<h2 class="section-title">Past Events</h2>
+{% for event in events.blocks %}
+<div class="events-grid past-events">
+    {% if now > event.date %}
+        {{ render_event(event) }}
+    {% endif %}
+</div>
+{% endfor %}
 {% endmacro %}
